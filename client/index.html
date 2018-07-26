@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ITS: Intelligent Tutoring System</title>
+
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<!--<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>-->
+	<script src="js/ITS jQuery Mobile/jquery.mobile-1.4.2.js"></script>
+	<style>
+		tr {
+    			border-bottom: 1px solid lightgray;
+		}
+		tr:nth-child(even) {
+    		background: #e9e9e9;
+		}
+	</style>
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+			"HTML-CSS": {
+				linebreaks: {
+					automatic: true,
+					width: "container"
+				}
+			}
+		});
+	</script>
+	<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+	<script src="js/ITS_jquery_mobile.js"></script>
+	<script src="phonegap.js"></script>
+	<link rel="stylesheet" href="css/ITS_Mobile.css" />
+</head>
+
+<div data-role="page">
+
+	<div data-role="header" data-position="fixed">
+		<a href="logout.php" data-icon="delete" onclick="logout()">Logout</a>
+		<h1 id="center_header"> ITS Mobile </h1>
+
+		<div data-role="navbar" data-theme="e" data-iconpos="top">
+			<ul>
+				<li><a id="m" onclick="updateScreen('m')" data-icon="grid" class="ui-btn-active ui-state-persist">Assignments</a></li>
+				<li><a id="q" onclick="updateScreen('q')" data-icon="star">Questions</a></li>
+				<li><a id="r" onclick="updateScreen('r')" data-icon="back">Review</a></li>
+				<li><a id="s" onclick="updateScreen('s')" data-icon="home">Scores</a></li>
+                <!--<li><a id="t" onclick="updateScreen('t')" data-icon="star">TEST</a></li>-->
+                <li><a id="p" onclick="updateScreen('p')" data-icon="eye">Performance</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /header -->
+	<div id="content" data-role="content">
+
+	</div>
+</div><!-- /page -->
+
+<script>
+//Wait for PhoneGap to get ready to execute Javascript
+document.addEventListener("deviceready", onDeviceReady, false);
+
+function onDeviceReady() {
+	// CAS LOGIN: GT Authentication
+	// login();
+	/*
+	var gaPlugin;
+	gaPlugin = window.plugins.gaPlugin;
+    gaPlugin.init(successHandler, errorHandler, "UA-49741874-1", 10);
+	gaPlugin.trackPage( successHandler, errorHandler, "www/index.html");
+	gaPlugin.trackEvent( successHandler, errorHandler, "Button", "Click", "event only", 1);
+	*/	
+	updateScreen('m', '', 1); // updateScreen('m', '', user_id) <=== user_id=1
+	/*
+	console.log('this should be called after updateScreen');
+	console.log(base_chapter);
+	$("#center_header").html("ITS Mobile - A-"+base_chapter).trigger('create');
+	*/
+	//Fetch user ticket
+	//CAS_Test();
+	//If logged in
+}
+function successHandler () {
+	alert('GA init successfully!');
+}
+function errorHandler () {
+	alert('GA init unsuccessfully');
+}
+</script>

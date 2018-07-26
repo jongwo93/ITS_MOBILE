@@ -1,0 +1,350 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"session_",
+				"session_id"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"qAn",
+				"qAnswersIFlag"
+			],
+			[
+				"qImage",
+				"qImagePath"
+			],
+			[
+				"mc",
+				"mc_img_vals"
+			],
+			[
+				"Q_ans",
+				"Q_answers_values"
+			],
+			[
+				"q",
+				"qQuestion"
+			],
+			[
+				"JS",
+				"JSON_array"
+			],
+			[
+				"ITS",
+				"ITS_image_link"
+			],
+			[
+				"json",
+				"json_encode"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 2130,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/ITS_jquery_mobile.js",
+			"settings":
+			{
+				"buffer_size": 31446,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/E/home/dboatwright6/html/ajax/ITS_ajax_mobile.php",
+			"settings":
+			{
+				"buffer_size": 2354,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 58.0,
+		"selected_items":
+		[
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/E/home/rliou7/html/MobileApp/ajax/ITS_ajax_mobile.php",
+		"/C/Users/Ricky/Documents/Senior Design/bluetooth_open.ps1",
+		"/C/Users/Ricky/Documents/Senior Design/bluetooth.ps1",
+		"/E/home/rliou7/html/MobileApp/index.html",
+		"/E/home/rliou7/html/MobileApp/js/ITS_jquery_mobile.js",
+		"/E/home/dboatwright6/html/js/ITS_jquery_mobile.js",
+		"/E/home/dboatwright6/html/ajax/ITS_ajax_mobile.php",
+		"/E/home/rliou7/html/MobileApp/classes/ITS_question_mobile.php",
+		"/E/home/rliou7/html/MobileApp/classes/ITS_screen_mobile.php",
+		"/E/home/rliou7/html/PhoneGap/index.html",
+		"/E/home/dboatwright6/html/index.html",
+		"/E/home/rliou7/html/PhoneGap/js/ITS_jquery_mobile.js",
+		"/E/home/dboatwright6/html/MergedCode/js/ITS_jquery_mobile.js",
+		"/E/home/rliou7/html/PhoneGap/.zip",
+		"/E/home/rliou7/html/MobileApp/config_mobile.php",
+		"/E/home/rliou7/html/PhoneGap/config.xml",
+		"/E/home/dboatwright6/html/MergedCode/index.html",
+		"/E/home/ndureja3/html/MobileApp/index.html",
+		"/E/home/ndureja3/html/MobileTest/index.html",
+		"/E/html/PhoneGap/js/ITS_jquery_mobile.js",
+		"/E/html/MobileApp/css/ITS_Mobile.css",
+		"/E/html/MobileApp/index.html",
+		"/E/html/PhoneGap/css/ITS_Mobile.css",
+		"/C/xampp/apache/conf/httpd.conf",
+		"/C/xampp/php/php.ini",
+		"/C/Users/Ricky/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Ricky/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Ricky/Documents/Arduino/bluetooth/bluetooth.ino",
+		"/C/Users/Ricky/AppData/Local/Temp/Temp1_sd-example.zip/sd-example/index.html",
+		"/E/html/MobileApp/config.xml",
+		"/E/html/PhoneGap/main.html",
+		"/E/html/MobileApp/inAppBrowserTest/index.html",
+		"/E/html/PhoneGap/index.html",
+		"/C/Users/Ricky/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/E/html/MobileApp/package.xml",
+		"/E/html/MobileApp/config_mobile.php",
+		"/E/html/MobileApp/js/ITS_jquery_mobile.js",
+		"/E/html/MobileApp/test.html"
+	],
+	"find":
+	{
+		"height": 31.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"return",
+			"alert",
+			"die",
+			";\n",
+			"30",
+			"virtualhost"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2130,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1448,
+								1448
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "js/ITS_jquery_mobile.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 31446,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								16773,
+								16773
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 9382.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/E/home/dboatwright6/html/ajax/ITS_ajax_mobile.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2354,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								788,
+								788
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": -0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 31.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "projects.sublime-project",
+	"replace":
+	{
+		"height": 58.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

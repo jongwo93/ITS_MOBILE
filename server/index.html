@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ITS: Intelligent Tutoring System</title>
+
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<!-- <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script> -->
+<script src="js/ITS%20jQuery%20Mobile/jquery.mobile-1.4.2.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+ "HTML-CSS": {
+	linebreaks: {
+			automatic: true,
+			width: "container"
+		}
+	}
+ });
+</script>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script src="js/ITS_jquery_mobile.js"></script>
+<link rel="stylesheet" href="css/ITS_Mobile.css" />
+</head>
+
+<div data-role="page">
+
+<div data-role="header" data-position="fixed">
+<a href="logout.php" data-icon="delete">Logout</a>
+<h1> ITS Mobile </h1>
+<a href="#" data-icon="search" data-iconpos="notext">Search</a>
+
+<div data-role="navbar" data-theme="e" data-iconpos="top">
+<ul>
+
+<li><a id="s" onclick="updateScreen('s')" data-icon="home">Scores</a></li>
+<li><a id="m" onclick="updateScreen('m')" data-icon="grid" class="ui-btn-active ui-state-persist">Modules</a></li>
+<li><a id="q" onclick="updateScreen('q')" data-icon="star" >Questions</a></li>
+<li><a id="r" onclick="updateScreen('r')" data-icon="back">Review</a></li>
+
+</ul>
+</div><!-- /navbar -->
+</div><!-- /header -->
+<div id="content" data-role="content">
+
+</div>
+</div><!-- /page -->
+
+<script>
+//Get user id somehow
+//Redirect user to the login screen
+//var ref = window.open('https://login.gatech.edu/cas/login?service=its.vip.gatech.edu, '_self', 'location=no');
+////Add event listener to fire event when CAS attempts to redirect to its.vip.gatech.edu
+//ref.addEventListener('loadstart', function(){
+//	alert(event.url);
+//});
+//Fetch user ticket
+$(document).ready(function(){
+	updateScreen('m', '', 1);
+	//login();
+});
+
+//CAS_Test();
+//If logged in
+</script>

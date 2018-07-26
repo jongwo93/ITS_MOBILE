@@ -1,0 +1,131 @@
+<?php
+$LAST_UPDATE = 'Oct-30-2014';
+$file = basename(__FILE__, '.php');
+$path = '../';
+$debug = FALSE;
+
+require_once($path . "config.php"); // #1 include
+require_once($path . "classes/includes.php");
+
+$IN  = new includes($file);
+$inc = $IN->getIncludes();
+
+$id = 1;
+$status = $term;
+// -----------------------------------------------------------//
+?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+    <head>
+      <title>ITS - FAQ</title>
+        <meta name="description" content="Signal Processing Tutoring System">      
+		<link rel="stylesheet" type="text/css" href="../docs/css/docs.css" />
+   </head>
+   <body>
+	   <br>
+      <center>
+         <div class="content border2-1 support-faqpage">
+            <h2><a class="btn home" href="../">ITS</a> &ndash;<b> Frequently Asked Questions</b></h2>
+            <div class="clear"></div>
+          
+            <div class="otherbox bonuses-box-1">
+               <div style="padding:15px;text-align:left">
+			<ol class="list">
+            <li><a href="#faq1">How do I report login problems, bugs, or ask additional questions about ITS?</a></li>
+            <li><a href="#faq2">How do I login to ITS? Do I need to be on the ECE network?</a></li>
+            <li><a href="#faq3">What is the purpose of ITS?</a></li>
+            <li><a href="#faq4">How are Assignments graded on ITS?</a></li>
+            <li><a href="#faq5">What happens when I skip a question?</a></li>              
+            <li><a href="#faq6">What is the schedule for ITS Assignments?</a></li>
+            <li><a href="#faq7">How do I get involved in developing ITS as part of an undergraduate research project?</a></li>
+            </ol>
+            <p><hr></p>
+                  <dl>
+                     <dt id="faq1">1. How do I report login problems, bugs, or ask additional questions about ITS?</dt>
+                     <dd>
+                        <p>Email Greg Krudysz: <span class="mail">krudysz@ece.gatech.edu</span></p>
+                        <p>If you do find a bug, please make a screen-shot and attach it with your email.</p>
+                     </dd>
+                     <dt id="faq2">2. How do I login to ITS? Do I need to be on the ECE network?</dt>
+                     <dd>
+                        <p>  
+                        <ul class="citation-list">
+                           <li>ITS is available at: <a href="http://quid.gatech.edu">quid.gatech.edu</a> &mdash; login with GT id ( same as for T-square )</li>
+                           <li>You do not need to be on the ECE network, it is accessible from anywhere.</li>
+                        </ul>
+                        </p>
+                     </dd>
+                     <dt id="faq3">3. What is the purpose of ITS?</dt>
+                     <dd>
+                        <p>
+                           ITS is a way to get extra practice on problems aside from homework. It tends to be relatively low-pressure and many students reported in surveys from past semesters that it was helpful.
+                        <ul class="citation-list">
+                           <li>Supplement homework questions with quick conceptual questions</li>
+                           <li>Review & Test your conceptual knowledge of course material</li>
+                           <li>Electronically grade and distribute problems</li>
+                        </ul>
+                        </p>
+                     </dd>
+                     <dt id="faq4">4. How are Assignments graded on ITS?</dt>
+                     <dd>
+                        <p>
+                        <ul class="citation-list">
+                           <li>Each question is worth 100 pts, you need <b><?php
+echo $ptsMax; ?></b> pts to obtain full score on each Assignment
+                           <li>Each Assignment consists of 40+ questions</li>
+                           <li>ITS Assignment = Homework Assignment</li>
+                           <li>ITS Assignment <b>grade</b> = <code><?php
+echo $ptsGrade; ?>*( min( Assignment_Points , <?php
+echo $ptsMax . ' ) / ' . $ptsMax; ?> )</code></li>
+                           <li>In ITS under the "My Scores" link you can view your grade for each Assignment</li>
+                        </ul>
+                        </p>
+                     </dd>
+                     <dt id="faq5">5. What happens when I skip a question?</dt>
+                     <dd>
+                        <p>
+                        <ul class="citation-list">
+                           <li>In each assignment, ITS chooses randomly one question from a bank of questions</li>  
+                           <li>When a question is skipped, another question is randomly selected from the bank, and skipped questions will eventually be selected from the bank</li>
+                           <li>There is no penalty for skipping a question, you can skip as many questions as you like</li>
+						  <li>ITS does allow to get back to the skipped questions, however once a question has been submitted, it will be taken out of the pool of questions</li>	   
+                        </ul>
+                        </p>
+                     </dd>                       
+                     <dt id="faq6">6. What is the schedule for ITS Assignments?</dt>
+                     <dd>
+                        <p>
+                        <ul class="citation-list">
+                           <li>Each assignment will be released for 2+ weeks, with ample time for problem solving activity</li>
+                           <li>ITS ( approximate ) schedule:
+                           <p>
+							Assignments 1-4 before Exam 1<br />
+                            Assignments 5-6 before Exam 2<br />
+                            Assignments 7-8 before the Final</p>
+                            <p><center><?php
+								echo '<h1> Assignment Schedule<br />ECE 2026 &mdash; ' . preg_replace('[_]', ' ', $term) . '</h1>';
+								echo $v; ?></center></p>
+                            </li>
+                        </ul>
+                        </p>
+                     </dd>                           
+                     <dt id="faq7">7. How do I get involved in developing ITS as part of an undergraduate research project?</dt>
+                     <dd>
+                        <p>Visit <a href="http://vip.gatech.edu" target="_blank">Vertically-Integrated Projects</a> to learn more about the <a href="http://vip.gatech.edu/new/teams/intelligent-tutoring-system" target="_blank">Intelligent Tutoring System</a> Team.</p>
+                        <p>Email Prof. James McClellan: <span class="mail">jim.mcclellan@ece.gatech.edu</span> - along with your resume.</p>
+                     </dd>                     
+                  </dl>
+               </div>
+            </div>
+         </td>
+         </tr>
+         <tr>
+            <td class="footer">
+            </td>
+         </tr>
+         <!--// Page footer -->
+         </tbody>
+         </table>
+      </center>
+   </body>
+</html>

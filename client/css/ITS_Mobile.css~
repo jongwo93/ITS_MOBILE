@@ -1,0 +1,16 @@
+.MATLAB{
+	word-wrap:break-word;
+}
+
+.ITS_image_link{
+	/*display: block;*/
+    /*left: 50%;
+    margin-right: -50%;*/
+	width:90%;
+	max-height:auto;
+	/*text-align:center;*/
+}
+
+.ITS_image_popup{
+	width:100%;
+}

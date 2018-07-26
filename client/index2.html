@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>ITS Mobile App Login</title>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+<script src="phonegap.js"></script>
+
+</head>
+<body>
+<h1>Welcome to ITS Mobile Application.</h1>
+<button id="button1" type="button">Click me to login!</button>
+ 
+<script>
+// Call onDeviceReady when PhoneGap is loaded.
+//
+// At this point, the document has loaded but phonegap-1.0.0.js has not.
+// When PhoneGap is loaded and talking with the native device,
+// it will call the event `deviceready`.
+// 
+document.addEventListener("deviceready", onDeviceReady, false);
+
+function onDeviceReady() {
+	//var ref = window.open('http://google.com', '_blank', 'location=yes');
+	// Now safe to use the PhoneGap API
+	//alert('yo');
+	//navigator.notification.alert('hello', alertDismissed);
+	
+	//Disable button
+	$('#username').attr("disabled", "disabled");
+
+	$( "#button1" ).click(function() {
+		//var ref = window.open('https://login.gatech.edu/cas/login?service=http://its.vip.gatech.edu', '_self', 'location=no');
+		//ref.addEventListener("loadstart", function(event){
+		//navigator.notification.alert(event.url,alertDismissed);
+		//if(event.url == 'http://its.vip.gatech.edu'){
+		//	ref.close();
+		//ref.close();
+		//alert('hey');
+		var ref = window.open('https://login.gatech.edu/cas/login?service=http://itsdev3.vip.gatech.edu/~rliou7/MobileApp/PHPCAS.php', '_blank', 'location=no');
+		ref.addEventListener('loadstop', function(event){
+			var url = event.url;
+			//alert(event.url);
+			//alert(url.match(/^http:\/\/itsdev3.vip.gatech.edu\/*/));
+			if(url.match(/^http:\/\/itsdev3.vip.gatech.edu\/*/)){
+				//alert(url.match(/http:\/\/itsdev3.vip.gatech.edu\/*/));
+				//Username should now be stored on server
+				//Make AJAX call to fetch username to confirm
+				$.ajax({
+					url: 'http://itsdev3.vip.gatech.edu/~rliou7/MobileApp/PHPCAS.php', 
+					type: 'GET', 
+					data: {}, 
+					crossDomain: true,
+					dataType: 'json', 
+					success: function(data){
+						//alert(data);
+						$('#username').html(data);
+					},
+					error: function(data){
+						alert('failure');	
+					}
+				});
+				ref.close();
+			}
+		});
+	});
+}
+
+function alertDismissed(){
+	//Do nothing
+}
+</script>
+ 
+</body>
+</html>

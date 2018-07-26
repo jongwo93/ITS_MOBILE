@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "com.gatech.itsvip"
+        versionCode = "10"
+        version     = "1.0.0" >
+
+    <!-- versionCode is optional and Android only -->
+
+    <name>ITS Mobile App</name>
+
+    <description>
+	    Beta ITS mobile interface
+    </description>
+
+     <author href="quid.gatech.edu" email="krudysz@ece.gatech.edu">
+        Georgia Tech ITS Team 
+    </author>
+
+    <!-- Customize your app and platform with the preference element. -->
+
+	<gap:plugin name="org.li8.inappbrowser" version="0.1" />
+	<gap:plugin name="org.apache.cordova.dialogs" version="0.2.6" />
+    <gap:plugin name="com.adobe.plugins.gaplugin" version="2.3.1" />
+ <access origin="*"/>
+
+</widget>

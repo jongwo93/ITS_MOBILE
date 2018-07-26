@@ -1,0 +1,20 @@
+/*
+Author: Sen;
+Css file to deco
+*/
+.question-answer {
+	padding-right: 200px;
+	padding-left: 100px;
+	text-align: center;
+}
+	.question-label-column { 
+		padding-right: 0px; 
+	}
+
+	#submit { 
+		margin-top: 30px;
+		padding: 10px 120px; 
+	}
+	input[type="radio"] {
+	    transform: scale(3);
+	}
